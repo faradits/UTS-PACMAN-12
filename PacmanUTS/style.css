@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.3s;
+    color: white;
+}
+
+header nav a.active {
+    background: rgb(100, 94, 158);
+}
+
+header nav a:hover {
+    background: rgb(71, 66, 111);
+}
+
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to top, #361235, #351e55 50%, #361235);
+  position: relative;
+  overflow: hidden;
+}
+
+.home img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px; /* Sesuaikan lebar gambar dengan kebutuhan */
+}
+
+.tentang p {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+  text-align: left;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tentang ul {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+  text-align: left;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tentang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10%;
+  text-align: center;
+  background-color: #fff; 
+}
+
+
+.tentang, .flowchart h2 {
+  font-size: 30px;
+  margin-top: 8px;
+  font-weight: 800;
+  background: linear-gradient(to top, #e8d8ff, #df72ae 40%, #fff );
+}
+
+.flowchart {
+  max-width: 800px;
+  width: 700px;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; /*inii*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*inii*/
+  text-align: center;
+  justify-content: center;
+  margin-left: 250px;
+}
+
+.flowchart img{
+  height: 80vh; 
+}
+
+.kontak {
+  height: 85vh;
+  font-size: 30px;
+  background-color: #e8d8ff;
+}
+
+.kontak h1{
+  text-align: center;
+}
+
+.kontak h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+  background-position: center;
+  background-color: transparent;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+}   
+
+.kontak-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.kontak-item {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.kontak-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+  .kontak-item:hover {
+    transform: translateY(-5px);
+  }
+  .kontak-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .kontak-item p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  .kontak-item .buttonmore {
+    display: flex;
+    background-color: #072ef1;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    /* height: 40px; */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .buttonmore a{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;   
+  }
+  .buttonmore {
+    background-color: rgb(128, 0, 0);
+    background-color: #f10707;
+    border-radius: 8px;
+    padding: 4px ;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .buttonmore:hover{
+    scale: 1.2;  
+  }
+
+.link-website {
+    color: #666666; /* warna teks */
+    text-decoration: none; /* menghilangkan garis bawah */
+}
+
+.link-website:hover {
+    color: #361235; /* warna teks saat dihover */
+}
+
+  footer {
+    background-color: #172435;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
